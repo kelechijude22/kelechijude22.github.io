@@ -1,0 +1,149 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewpot" content="width=device-width, initial-scale=1">
+<title>Module 2 Assignment Soluction</title>
+<style>
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+h1 {
+  font-family: calibri, sans-serif;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+div.container1 {
+  background-color: black;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 10px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+div.container2 {
+  background-color: black;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 10px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+div.container3 {
+  background-color: black;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 10px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+div#menu1 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: darkred;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+div#menu2 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: gray;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+div#menu3 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: green;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  font-family: calibri, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+/* For tablets and large phones: */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  background-color: green;
+  .col-m-1 {
+    width: 25%;
+  }
+  .col-m-2 {
+    width: 25%;
+  }
+  .col-m-3 {
+    width: 50%;
+  }
+}
+
+
+/* For Desktop */
+
+@media only screen and (min-width:992px) {
+  .col-1 {
+    width: 33.33%;
+  }
+  .col-2 {
+    width: 33.33%;
+  }
+  .col-3 {
+    width: 33.33%;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Module 2 Assignment</h1>
+
+<div class="container1 .col-1 .col-m-1">
+  <div id="menu1">Chicken</div>
+  <p>
+    "The chiken clucked loudly as it scratched in the the dirt, The chicken soft feathers glistened in the sunlight as it strutted around the farmyard, its proud crowing echoinh through the air".
+  </p>
+</div>
+
+<div class="container2 .col-2 .col-m-2">
+  <div id="menu2">Goat</div>
+  <p>"The goat bleated contentedly as it munched on a tin can, The goat agile legs scampered up the rocky hillside, its curious horns twitching as it explored the rugged terrain with playful bleats".</p>
+</div>
+
+<div class="container3 .col-3 .col-m-3">
+  <div id="menu3">Pig</div>
+  <p>
+    "The pig rolled around in the mud, oinking happily, creating a lively scene on the farm that was both chaotic and charming,The pig rotund body waddled across the muddy pen,its curly tail wagging with excitement as it snuffled out the tastiest morsels with its twitching snout".</p>
+</div>
+</body>
+</html>

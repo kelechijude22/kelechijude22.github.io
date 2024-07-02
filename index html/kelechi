@@ -1,0 +1,47 @@
+<!Doctyoe html>
+<html>
+<head>
+<meta charset="utf-8"
+<title>pseudo class selectors</title>
+<style>
+/* styles go here. */
+
+
+</styles>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+   <ul>
+   <li><a href="/"Home</a></li>
+   <li><a href="http://goo.gl/VOWL6s"target="-blank">AngularJ5 Course</a></li>
+   <li><a href="http://WWW.facebook.com/courserawebdev"  target="-blank">Facebook Fan Page</a><li>
+   </ul>
+   </header>
+
+   <section>
+   <div>DIV 1</div>
+   <div>DIV 2</div>
+   <div>DIV 3</div>
+   <div>Div 4</div>
+   <div>DIV 5</div>
+   <div>DIV 6</div>
+   <div>DIV 7</div>
+   <div>DIV 8</div>
+   <div>DIV 9</div>
+   <div>DIV 10</div>
+   <div>DIV 11</div>
+   <div>DIV 12</div>
+   <div>DIV 13</div>
+   <div>DIV 14</div>
+   <div>DIV 15</div>
+   <div>DIV 16</div>
+   <div>DIV 17</div>
+   <div>DIV 18</div>
+   <div>DIV 19</div>
+   <div>DIV 20</div>
+   </selection>
+
+   </body>
+   </html>

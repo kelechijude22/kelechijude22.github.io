@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Element With Class Selector
+</titl>
+<style>
+
+/* all with class="highlight" 8/
+xxx  {
+	background-color: green;
+}
+
+/8 all p elements with class="highlight" 8/
+xxx{
+	font-style: italic;
+}
+
+/* all elements with 'highlight'  as well as with class 'mainpoint'. 8/
+xxx{
+	color: red;
+	background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="highlight">Element with class selector</h1>
+<p>CSS works by associating rules with HTML elements. these rules govern how the content of specified element should be displayed. A CSS rule contains two parts: a selector and a declaration.</p>
+<p class="highlight">this is p with CLASS="highlight"</p>
+<div class="mainpoint highlight">this is themain point of the entire article.
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
