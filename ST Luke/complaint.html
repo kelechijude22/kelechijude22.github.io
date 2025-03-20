@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Submit Complaint</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<h1 id="Welcome-message">Welcome!</h1>
+	<!-- Dynamic Welcome message -->
+	<p>Please fill out the form below to submit a complaint.</p>
+<form action="https://formspree.io/f/xwplvvgw" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <label for="room">Room Number:</label>
+        <input type="text" id="number" name="room" placeholder="Room Number" required>
+        <label for="complaint">Complaint:</label>
+        <select id="complaint" name="complaint">
+            <option value="Water">Water Issue</option>
+            <option value="Electricity">Electricity Issue</option>
+            <option value="Network">Network Issue</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Enter your complain" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+<script src="script.js"></script>
+    <footer>
+        <p>&copy:ST LUKE LODGE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
