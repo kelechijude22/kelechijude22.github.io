@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Motivation</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+  <div id="welcomePage">
+    <h2>Welcome!</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="saveName()">Continue</button>
+  </div>
+
+  <div id="quoteBox" style="display: none;">
+    <p id="quoteText">Your quote will appear here...</p>
+    <p id="authorName">—</p>
+    <button onclick="showNewQuote()">New Quote</button>
+    <button onclick="saveQuote()">Save Quote</button>
+  </div>
+
+  <div style="background: url('Motivational quote/image.jpeg') no repeat center center;
+  background-size: cover;
+  height: 100vh;">
+  <!-- your content here -->
+</div>
+
+<div id="creatorSignature">Created by Kelechi Jude</div>
+
+<script src="script.js"></script>
+</body>
+</html>
