@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.2" />
+    <title>Daily Motivation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="welcomePage">
+        <h2>Welcome!</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button onclick="saveName()">Continue</button>
+      </div>
+
+      <div id="quoteBox" style="display: none">
+        <div class="greating">
+          <p id="dayGreeting"></p>
+        </div>
+        <p id="quoteText">quote will appear here...</p>
+        <p id="authorName">—</p>
+        <button onclick="showNewQuote()">New Quote</button>
+      </div>
+    </div>
+
+    <div id="creatorSignature">Created by <strong>Kelechi Jude</strong></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
