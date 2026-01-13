@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Software Engineering Course - R-Tech</title>
+
+    <link rel="icon" type="logo" href="logo/favicon.webp" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css?v=1.0" />
+
+    <style>
+      /* Adjust Register section padding */
+      .course-registration-form {
+        padding: 20px 20px 40px;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ========================HEADER========================== -->
+    <header class="navbar" role="banner">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="R-Tech Home">
+            <img src="logo/mainlogo.png" alt="R-Tech Logo" />
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <nav id="primary-navigation" aria-label="Primary">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#">Tech Solutions ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Development Services</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Research ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Academy Research</a></li>
+                <li><a href="research.html">Business Intelligence</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">EdTech ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">High School</a></li>
+                <li><a href="#">University</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#" class="btn-signup">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="course-page-main">
+      <!-- Course Hero Section -->
+      <section class="course-hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <h1>Software Engineering Course</h1>
+              <p class="course-subtitle">
+                Learn to design, build, and maintain complex software systems
+                like a professional engineer.
+              </p>
+
+              <a href="#register" class="btn-hero-enroll">Enroll Now</a>
+              <p class="hero-price">₦150,000 / 3-Month Program</p>
+            </div>
+
+            <div class="hero-image">
+              <img
+                src="images/software-engr.jpg"
+                alt="Software architecture diagram on a screen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="why-choose-us">
+        <div class="container">
+          <h2>Why Our Program?</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Algorithmic Thinking</h3>
+              <p>
+                Move beyond syntax. Learn how to solve complex computational
+                problems using data structures and algorithms.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-city"></i>
+              </div>
+              <h3>System Design Focus</h3>
+              <p>
+                Learn how large-scale systems (like Netflix or Uber) are
+                architected for reliability and scalability.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Technical Interview Prep</h3>
+              <p>
+                Our curriculum is designed to help you pass the rigorous
+                technical screenings of top tech companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Modules Section -->
+      <section class="course-modules">
+        <div class="container">
+          <h2>What You Will Learn</h2>
+          <div class="modules-grid">
+            <div class="module-card">
+              <i class="fas fa-sitemap"></i>
+              <h3>System Design & Architecture</h3>
+              <p>
+                Learn to design scalable and resilient software systems for
+                complex problems.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-code"></i>
+              <h3>Data Structures & Algorithms</h3>
+              <p>
+                Master the fundamental building blocks of efficient and
+                high-performance code.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-cogs"></i>
+              <h3>API Design & Development</h3>
+              <p>
+                Build and consume robust APIs that power modern applications.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-tasks"></i>
+              <h3>Software Development Lifecycle</h3>
+              <p>
+                Understand professional workflows including Agile, testing, and
+                CI/CD.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-cloud"></i>
+              <h3>Cloud Computing Principles</h3>
+              <p>
+                Learn the basics of deploying and managing applications on cloud
+                platforms like AWS.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-users-cog"></i>
+              <h3>Collaborative Development</h3>
+              <p>
+                Master essential tools for team collaboration, including Git and
+                GitHub.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === SKILLS SECTION  === -->
+      <section class="skills-gain-section">
+        <div class="container">
+          <h2>Skills You Will Gain</h2>
+          <ul class="skills-list-grid">
+            <li>
+              <i class="fas fa-check"></i> Object-Oriented Programming (OOP)
+            </li>
+            <li>
+              <i class="fas fa-check"></i> Data Structures & Algorithms (DSA)
+            </li>
+            <li><i class="fas fa-check"></i> System Design & Scalability</li>
+            <li>
+              <i class="fas fa-check"></i> Software Testing (Unit & Integration)
+            </li>
+            <li><i class="fas fa-check"></i> CI/CD Pipelines & DevOps</li>
+            <li>
+              <i class="fas fa-check"></i> Relational Database Design (SQL)
+            </li>
+            <li><i class="fas fa-check"></i> Microservices Architecture</li>
+            <li><i class="fas fa-check"></i> Agile & Scrum Methodologies</li>
+            <li><i class="fas fa-check"></i> Version Control (Git Flow)</li>
+            <li>
+              <i class="fas fa-check"></i> Cloud Infrastructure (AWS/Azure)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- === COURSES SECTION === -->
+      <section class="included-courses-section">
+        <div class="container">
+          <h2>Included Courses</h2>
+          <div class="courses-grid-cards">
+            <!-- Card 1 -->
+            <div class="course-card">
+              <span class="course-number">01</span>
+              <h3>Introduction to Software Engineering & OOP</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="course-card">
+              <span class="course-number">02</span>
+              <h3>Advanced Data Structures & Algorithms</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="course-card">
+              <span class="course-number">03</span>
+              <h3>Software Architecture & Design Patterns</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="course-card">
+              <span class="course-number">04</span>
+              <h3>DevOps, Cloud Deployment & Testing</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === TESTIMONIALS SECTION === -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>What Our Students Say</h2>
+          <div class="testimonial-grid">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "The focus on Data Structures and Algorithms was a game changer.
+                I finally cracked the technical interview at a major fintech
+                company."
+              </blockquote>
+              <cite>- David O., Software Engineer</cite>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "I used to just write code that worked. Now I write code that is
+                clean, scalable, and maintainable. I feel like a true engineer."
+              </blockquote>
+              <cite>- Priya Patel, Backend Developer</cite>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <blockquote>
+                "Understanding System Design and Microservices helped me lead a
+                huge migration project at my current workplace. Highly
+                recommended."
+              </blockquote>
+              <cite>- Marcus T., DevOps Engineer</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Section -->
+      <section id="register" class="course-registration-form">
+        <div class="container">
+          <h2>Register Your Interest</h2>
+          <p class="section-intro">
+            Complete the form below, and our admissions team will contact you
+            with the next steps.
+          </p>
+
+          <form
+            class="registration-form"
+            action="YOUR_FORM_HANDLER_URL"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="full-name"
+                >First Name <span class="required">*</span></label
+              >
+              <input type="text" id="full-name" name="fullName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="other-name">Other Name (optional)</label>
+              <input type="text" id="other-name" name="othername" />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name"
+                >Last Name <span class="required">*</span></label
+              >
+              <input type="text" id="last-name" name="lastname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email"
+                >Email Address <span class="required">*</span></label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone"
+                >Phone Number <span class="required">*</span></label
+              >
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="course"
+                value="Software Engineering Program"
+              />
+              <button type="submit" class="btn-enroll">
+                Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chatbot Widget -->
+    <!-- Rtech Chatbot -->
+    <!-- Rtech Chatbot -->
+    <div class="rtech-chatbot">
+      <div class="chatbot-toggle" id="chatbotToggle">
+        <img src="logo/chatbot.png" alt="Rtech Bot" />
+      </div>
+
+      <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+          <div class="bot-info">
+            <img src="images/rtech-bot.png" alt="Rtech Bot" />
+            <span>Rtech</span>
+          </div>
+          <button id="closeChatbot">&times;</button>
+        </div>
+
+        <div class="chatbot-content" id="chatbotMessages">
+          <div class="bot-msg">
+            ðŸ‘‹ Hello! Iâ€™m Rtech. How can I help you today?
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="userInput" placeholder="Type a message..." />
+          <button id="sendBtn">âž¤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         NEWSLETTER / FOOTER
+    ========================== -->
+    <section class="qei-newsletter" aria-labelledby="qei-newsletter-title">
+      <div class="qei-newsletter-bg"></div>
+
+      <div class="qei-newsletter-wrap">
+        <h2 id="qei-newsletter-title" class="qei-newsletter-heading">
+          Subscribe to get our Newsletter
+        </h2>
+
+        <form class="qei-newsletter-form" action="#" method="post" novalidate>
+          <label for="qei-newsletter-email" class="sr-only">Your Email</label>
+          <input
+            id="qei-newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <nav class="qei-newsletter-links" aria-label="Footer">
+          <a href="#">Careers</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Privacy Policy</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+
+        <p class="qei-newsletter-copy">© 2025 Rtech Technology</p>
+      </div>
+    </section>
+
+    <!-- =========== CHAT BOT =========== -->
+    <script>
+      const toggleBtn = document.getElementById("chatbotToggle");
+      const chatBox = document.getElementById("chatbotBox");
+      const closeBtn = document.getElementById("closeChatbot");
+      const sendBtn = document.getElementById("sendBtn");
+      const userInput = document.getElementById("userInput");
+      const chatMessages = document.getElementById("chatbotMessages");
+
+      // Toggle open/close
+      toggleBtn.addEventListener("click", () => {
+        chatBox.style.display =
+          chatBox.style.display === "block" ? "none" : "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        chatBox.style.display = "none";
+      });
+
+      // Send message + fake bot reply
+      sendBtn.addEventListener("click", sendMessage);
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+
+      function sendMessage() {
+        const userMsg = userInput.value.trim();
+        if (!userMsg) return;
+
+        // Show user message
+        const userDiv = document.createElement("div");
+        userDiv.classList.add("user-msg");
+        userDiv.textContent = userMsg;
+        chatMessages.appendChild(userDiv);
+
+        userInput.value = "";
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simple predefined responses
+        setTimeout(() => {
+          const botDiv = document.createElement("div");
+          botDiv.classList.add("bot-msg");
+
+          if (userMsg.toLowerCase().includes("service"))
+            botDiv.textContent =
+              "We offer IT training, web development, and research services.";
+          else if (userMsg.toLowerCase().includes("training"))
+            botDiv.textContent =
+              "You can register for our tech training via the â€˜Trainingâ€™ page.";
+          else if (userMsg.toLowerCase().includes("support"))
+            botDiv.textContent =
+              "You can contact our support team via email or live chat.";
+          else
+            botDiv.textContent =
+              "Thanks for reaching out! Iâ€™ll forward your message to our team.";
+
+          chatMessages.appendChild(botDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 700);
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

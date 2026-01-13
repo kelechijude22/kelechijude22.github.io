@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Development Bootcamp - R-Tech</title>
+
+    <link rel="icon" type="logo" href="logo/favicon.webp" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css?v=1.0" />
+
+    <style>
+      /* Adjust Register section padding */
+      .course-registration-form {
+        padding: 20px 20px 40px;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ========================HEADER========================== -->
+    <header class="navbar" role="banner">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="R-Tech Home">
+            <img src="logo/mainlogo.png" alt="R-Tech Logo" />
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <nav id="primary-navigation" aria-label="Primary">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#">Tech Solutions ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Development Services</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Research ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Academy Research</a></li>
+                <li><a href="research.html">Business Intelligence</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">EdTech ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">High School</a></li>
+                <li><a href="#">University</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#" class="btn-signup">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="course-page-main">
+      <!-- Course Hero Section -->
+      <section class="course-hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <h1>Web Development Bootcamp</h1>
+              <p class="course-subtitle">
+                Go from beginner to job-ready with our immersive full-stack
+                development program.
+              </p>
+
+              <a href="#register" class="btn-hero-enroll">Enroll Now</a>
+              <p class="hero-price">₦150,000 / 3-Month Program</p>
+            </div>
+
+            <div class="hero-image">
+              <img
+                src="images/web-dev.jpg"
+                alt="Web development process sketch"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="why-choose-us">
+        <div class="container">
+          <h2>Why Our Program?</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Changed icon to project diagram -->
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Project-Based Learning</h3>
+              <p>
+                Don't just watch videos. Build a professional portfolio of real
+                websites and web applications.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Changed icon to code branch -->
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h3>Modern Tech Stack</h3>
+              <p>
+                Master the technologies companies are hiring for in 2025: React,
+                Node.js, MongoDB, and Modern JS.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <!-- Changed icon to chalkboard/mentor -->
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h3>Code Reviews & Mentorship</h3>
+              <p>
+                Get personalized feedback on your code from senior developers to
+                ensure you follow best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Modules Section -->
+      <section class="course-modules">
+        <div class="container">
+          <h2>What You Will Learn</h2>
+          <div class="modules-grid">
+            <div class="module-card">
+              <i class="fab fa-html5"></i>
+              <h3>HTML5 & CSS3</h3>
+              <p>
+                Build the fundamental structure and style of modern, responsive
+                websites.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fab fa-js-square"></i>
+              <h3>JavaScript (ES6+)</h3>
+              <p>
+                Master the core language of the web to create dynamic and
+                interactive user experiences.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fab fa-react"></i>
+              <h3>Frontend Frameworks</h3>
+              <p>
+                Build powerful single-page applications using industry-leading
+                libraries like React.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-server"></i>
+              <h3>Backend Development</h3>
+              <p>
+                Learn to build servers, APIs, and manage databases with Node.js
+                and Express.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-database"></i>
+              <h3>Databases</h3>
+              <p>
+                Understand and work with both SQL and NoSQL databases like
+                PostgreSQL and MongoDB.
+              </p>
+            </div>
+            <div class="module-card">
+              <i class="fas fa-rocket"></i>
+              <h3>Deployment & DevOps</h3>
+              <p>
+                Learn how to deploy your applications to the cloud and manage
+                them professionally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === SKILLS SECTION  === -->
+      <section class="skills-gain-section">
+        <div class="container">
+          <h2>Skills You Will Gain</h2>
+          <ul class="skills-list-grid">
+            <li>
+              <i class="fas fa-check"></i> Responsive Web Design (Mobile-First)
+            </li>
+            <li>
+              <i class="fas fa-check"></i> JavaScript Algorithms & Data
+              Structures
+            </li>
+            <li>
+              <i class="fas fa-check"></i> Version Control with Git & GitHub
+            </li>
+            <li><i class="fas fa-check"></i> React.js & State Management</li>
+            <li><i class="fas fa-check"></i> RESTful API Development</li>
+            <li>
+              <i class="fas fa-check"></i> Server-side Programming (Node.js)
+            </li>
+            <li>
+              <i class="fas fa-check"></i> Database Management (SQL & NoSQL)
+            </li>
+            <li><i class="fas fa-check"></i> User Authentication & Security</li>
+            <li>
+              <i class="fas fa-check"></i> Cloud Deployment (Vercel/Heroku/AWS)
+            </li>
+            <li>
+              <i class="fas fa-check"></i> Debugging & Browser Developer Tools
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- === COURSES SECTION === -->
+      <section class="included-courses-section">
+        <div class="container">
+          <h2>Included Courses</h2>
+          <div class="courses-grid-cards">
+            <!-- Card 1 -->
+            <div class="course-card">
+              <span class="course-number">01</span>
+              <h3>The Web Foundation: HTML5, CSS3 & Git</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="course-card">
+              <span class="course-number">02</span>
+              <h3>JavaScript Mastery: From Basics to Advanced</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="course-card">
+              <span class="course-number">03</span>
+              <h3>Frontend Frameworks: React & Redux</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="course-card">
+              <span class="course-number">04</span>
+              <h3>Backend Engineering: Node, Express & Databases</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === TESTIMONIALS SECTION === -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>What Our Students Say</h2>
+          <div class="testimonial-grid">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "I went from zero coding knowledge to landing a Junior Developer
+                role in just 4 months. The portfolio projects made the
+                difference."
+              </blockquote>
+              <cite>- Alex Johnson, Frontend Developer</cite>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "The transition from vanilla JavaScript to React was explained
+                so clearly. I finally understand how single-page applications
+                work."
+              </blockquote>
+              <cite>- Sarah Chen, UI Engineer</cite>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <blockquote>
+                "Learning backend development with Node.js opened up so many
+                doors for me. I can now build full-stack apps from scratch."
+              </blockquote>
+              <cite>- Michael B., Full Stack Developer</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Section -->
+      <section id="register" class="course-registration-form">
+        <div class="container">
+          <h2>Register Your Interest</h2>
+          <p class="section-intro">
+            Complete the form below, and our admissions team will contact you
+            with the next steps.
+          </p>
+
+          <form
+            class="registration-form"
+            action="YOUR_FORM_HANDLER_URL"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="full-name"
+                >First Name <span class="required">*</span></label
+              >
+              <input type="text" id="full-name" name="fullName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="other-name">Other Name (optional)</label>
+              <input type="text" id="other-name" name="othername" />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name"
+                >Last Name <span class="required">*</span></label
+              >
+              <input type="text" id="last-name" name="lastname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email"
+                >Email Address <span class="required">*</span></label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone"
+                >Phone Number <span class="required">*</span></label
+              >
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="course"
+                value="Web Development Bootcamp"
+              />
+              <button type="submit" class="btn-enroll">
+                Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chatbot Widget -->
+    <!-- Rtech Chatbot -->
+    <!-- Rtech Chatbot -->
+    <div class="rtech-chatbot">
+      <div class="chatbot-toggle" id="chatbotToggle">
+        <img src="logo/chatbot.png" alt="Rtech Bot" />
+      </div>
+
+      <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+          <div class="bot-info">
+            <img src="images/rtech-bot.png" alt="Rtech Bot" />
+            <span>Rtech</span>
+          </div>
+          <button id="closeChatbot">&times;</button>
+        </div>
+
+        <div class="chatbot-content" id="chatbotMessages">
+          <div class="bot-msg">
+            ðŸ‘‹ Hello! Iâ€™m Rtech. How can I help you today?
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="userInput" placeholder="Type a message..." />
+          <button id="sendBtn">âž¤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         NEWSLETTER / FOOTER
+    ========================== -->
+    <section class="qei-newsletter" aria-labelledby="qei-newsletter-title">
+      <div class="qei-newsletter-bg"></div>
+
+      <div class="qei-newsletter-wrap">
+        <h2 id="qei-newsletter-title" class="qei-newsletter-heading">
+          Subscribe to get our Newsletter
+        </h2>
+
+        <form class="qei-newsletter-form" action="#" method="post" novalidate>
+          <label for="qei-newsletter-email" class="sr-only">Your Email</label>
+          <input
+            id="qei-newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <nav class="qei-newsletter-links" aria-label="Footer">
+          <a href="#">Careers</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Privacy Policy</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+
+        <p class="qei-newsletter-copy">© 2025 Rtech Technology</p>
+      </div>
+    </section>
+
+    <!-- =========== CHAT BOT =========== -->
+    <script>
+      const toggleBtn = document.getElementById("chatbotToggle");
+      const chatBox = document.getElementById("chatbotBox");
+      const closeBtn = document.getElementById("closeChatbot");
+      const sendBtn = document.getElementById("sendBtn");
+      const userInput = document.getElementById("userInput");
+      const chatMessages = document.getElementById("chatbotMessages");
+
+      // Toggle open/close
+      toggleBtn.addEventListener("click", () => {
+        chatBox.style.display =
+          chatBox.style.display === "block" ? "none" : "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        chatBox.style.display = "none";
+      });
+
+      // Send message + fake bot reply
+      sendBtn.addEventListener("click", sendMessage);
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+
+      function sendMessage() {
+        const userMsg = userInput.value.trim();
+        if (!userMsg) return;
+
+        // Show user message
+        const userDiv = document.createElement("div");
+        userDiv.classList.add("user-msg");
+        userDiv.textContent = userMsg;
+        chatMessages.appendChild(userDiv);
+
+        userInput.value = "";
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simple predefined responses
+        setTimeout(() => {
+          const botDiv = document.createElement("div");
+          botDiv.classList.add("bot-msg");
+
+          if (userMsg.toLowerCase().includes("service"))
+            botDiv.textContent =
+              "We offer IT training, web development, and research services.";
+          else if (userMsg.toLowerCase().includes("training"))
+            botDiv.textContent =
+              "You can register for our tech training via the â€˜Trainingâ€™ page.";
+          else if (userMsg.toLowerCase().includes("support"))
+            botDiv.textContent =
+              "You can contact our support team via email or live chat.";
+          else
+            botDiv.textContent =
+              "Thanks for reaching out! Iâ€™ll forward your message to our team.";
+
+          chatMessages.appendChild(botDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 700);
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

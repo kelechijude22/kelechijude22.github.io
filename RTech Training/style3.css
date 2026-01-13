@@ -1,0 +1,936 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (max-width: 992px) {
+    .container {
+        padding: 0 28px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+/* ===============================
+   NAVBAR / HEADER
+================================= */
+.navbar {
+    background-color: #fff;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo a img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #13277E;
+}
+
+.btn-signup {
+    background: linear-gradient(90deg, #fff9d9, #ffe78b);
+    color: #13277E !important;
+    /* visible dark blue text */
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+    background: linear-gradient(90deg, #fff2b0, #ffd46b);
+    color: #000 !important;
+}
+
+
+/* Header Styling */
+.main-header {
+    background-color: #ffffff;
+    padding: 15px 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    height: 94px;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 46px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #6C6C6C;
+    transition: color 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-style: 'semi-bold';
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    height: 52px;
+    width: 150px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #13277E 41.42%, #FFB51E 105.22%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    color: #ffff;
+}
+
+.main-nav .btn {
+    margin-left: 30px;
+    /* Space between last nav item and button */
+}
+
+.menu-toggle {
+    display: none;
+    /* Hide by default on desktop */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Dropdown Styling */
+.nav-links li {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #6C6C6C;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #13277E;
+    color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.course-hero {
+padding: 68px 0;
+background: linear-gradient(135deg, #13277E, #004C99);
+color: #ffffff;
+        
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.course-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.hero-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffb51e;
+    margin-top: 10px;
+}
+
+.btn-hero-enroll {
+    background-color: #ffb51e;
+    color: #13277E;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-hero-enroll:hover {
+    background-color: #e6a31b;
+    transform: translateY(-3px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-icon {
+    background-color: #13277E;
+    color: #ffb51e;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #13277e;
+}
+
+
+/* Course Modules Section */
+.course-modules {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.course-modules h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.modules-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.module-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ffb51e;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 181, 30, 0.2);
+}
+
+.module-card i {
+    font-size: 2.5rem;
+    color: #ffb51e;
+    margin-bottom: 20px;
+}
+
+.module-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #13277E;
+}
+
+.module-card p {
+    color: #333;
+}
+
+
+/* === SKILLS SECTION=== */
+.skills-gain-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.skills-gain-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.skills-list-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-list-grid li {
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+
+.skills-list-grid i {
+    background-color: #13277E;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+
+/* Courses Section */
+.included-courses-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.included-courses-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.courses-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #13277E;
+    text-align: center;
+}
+
+.course-card .course-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffb51e;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    color: #13277E;
+    font-weight: 600;
+}
+
+
+/* ===  Testimonials Section  === */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #ffb51e;
+    display: flex;
+    flex-direction: column;
+}
+
+.star-rating {
+    color: #ffb51e;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    flex-grow: 1;
+    color: #333;
+}
+
+.testimonial-card cite {
+    font-weight: 600;
+    font-style: normal;
+    margin-top: auto;
+    color: #13277E;
+}
+
+
+/* Registration Section */
+.course-registration-form {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #13277E;
+    text-align: center;
+}
+
+.course-registration-form .section-intro {
+    margin-top: 10px;
+    color: #333;
+}
+
+.course-registration-form h2 {
+    font-size: 2.5rem;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.registration-form label .required {
+    color: #db0707;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.registration-form .btn-enroll {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #13277E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form .btn-enroll:hover {
+    background-color: #0f1e5c;
+}
+
+/* ===============================
+   NEWSLETTER FOOTER
+================================= */
+/* ===== Newsletter Footer (Quantum Edge – scoped) ===== */
+.qei-newsletter {
+    position: relative;
+    overflow: clip;
+    padding: 56px 16px 64px;
+    color: #eaf0ff;
+    font-family: inherit;
+    /* uses your Poppins */
+    isolation: isolate;
+}
+
+/* Gradient + subtle shapes */
+.qei-newsletter-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(1100px 600px at 85% 70%, rgba(255, 255, 255, .08) 0%, rgba(255, 255, 255, 0) 60%),
+        radial-gradient(900px 500px at 15% 30%, rgba(255, 255, 255, .07) 0%, rgba(255, 255, 255, 0) 60%),
+        linear-gradient(180deg, #4b465a 0%, #0a1d78 60%, #061e64 100%);
+    /* soft vignette */
+    box-shadow: inset 0 40px 60px rgba(0, 0, 0, .25);
+}
+
+/* Content wrapper */
+.qei-newsletter-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Logo */
+.qei-newsletter-logo {
+    width: 190px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .25));
+}
+
+/* Heading */
+.qei-newsletter-heading {
+    font-weight: 700;
+    font-size: clamp(1.4rem, 1.4rem + 1.2vw, 2rem);
+    margin: 8px 0 22px;
+    letter-spacing: .2px;
+}
+
+/* Form row */
+.qei-newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 0 auto 40px;
+    flex-wrap: wrap;
+}
+
+.qei-newsletter-form input {
+    width: min(600px, 88vw);
+    flex: 1 1 420px;
+    background: transparent;
+    color: #eaf0ff;
+    border: 1.5px solid rgba(255, 255, 255, .35);
+    padding: 16px 22px;
+    border-radius: 999px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .15s, box-shadow .15s, background .15s;
+}
+
+.qei-newsletter-form input::placeholder {
+    color: rgba(234, 240, 255, .8);
+}
+
+.qei-newsletter-form input:focus {
+    border-color: rgba(255, 255, 255, .65);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .04);
+}
+
+.qei-newsletter-form button {
+    border: 0;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ffbd66;
+    /* warm orange */
+    color: #1a2a6b;
+    box-shadow: 0 8px 20px rgba(255, 189, 102, .35);
+    transition: transform .08s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+.qei-newsletter-form button:hover {
+    box-shadow: 0 10px 28px rgba(255, 189, 102, .45);
+    filter: brightness(1.05);
+}
+
+.qei-newsletter-form button:active {
+    transform: translateY(1px);
+}
+
+/* Footer links */
+.qei-newsletter-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 6px 0 14px;
+    flex-wrap: wrap;
+    font-size: 1.02rem;
+}
+
+.qei-newsletter-links a {
+    color: #eaf0ff;
+    text-decoration: none;
+    opacity: .95;
+    transition: opacity .15s;
+}
+
+.qei-newsletter-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.qei-newsletter-sep {
+    opacity: .55;
+}
+
+.qei-newsletter-copy {
+    margin: 6px 0 0;
+    font-size: 1.02rem;
+    opacity: .9;
+}
+
+/* accessibility helper (screen-reader only) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* ===============================
+   CHATBOT WIDGET STYLES
+================================= */
+/* ===============================
+   RTECH CHATBOT
+================================= */
+/* ===============================
+   RTECH FLOATING CHATBOT
+================================= */
+.rtech-chatbot {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    /* moved to right side */
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Round Floating Button */
+.chatbot-toggle {
+    width: 65px;
+    height: 65px;
+    background: #ffd500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-toggle img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+/* Chat Window */
+.chatbot-box {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.chatbot-header {
+    background-color: #ffd500;
+    color: #000;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.chatbot-header .bot-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chatbot-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.chatbot-header button {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Chat Area */
+.chatbot-content {
+    padding: 15px;
+    height: 250px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.bot-msg,
+.user-msg {
+    max-width: 80%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.bot-msg {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+.user-msg {
+    background: #ffd500;
+    color: #000;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/* Input Area */
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #eee;
+    padding: 10px;
+    background: #fff;
+}
+
+.chatbot-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.chatbot-input button {
+    background: #ffd500;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .skills-list-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+         .hero-grid {
+             grid-template-columns: 1fr;
+             text-align: center;
+         }
+
+         .hero-text h1 {
+             font-size: 2.5rem;
+         }
+         
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-list-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Analysis Workshop - R-Tech</title>
+
+    <link rel="icon" type="logo" href="logo/favicon.webp" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css?v=1.0" />
+
+    <style>
+      /* Adjust Register section padding */
+      .course-registration-form {
+        padding: 20px 20px 40px;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ========================HEADER========================== -->
+    <header class="navbar" role="banner">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="R-Tech Home">
+            <img src="logo/mainlogo.png" alt="R-Tech Logo" />
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <nav id="primary-navigation" aria-label="Primary">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#">Tech Solutions ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Development Services</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Research ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Academy Research</a></li>
+                <li><a href="research.html">Business Intelligence</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">EdTech ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">High School</a></li>
+                <li><a href="#">University</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#" class="btn-signup">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+     <main class="course-page-main">
+      <!-- Course Hero Section -->
+      <section class="course-hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <h1>Data Analysis Workshop</h1>
+              <p class="course-subtitle">
+               Learn to transform raw data into powerful business insights and compelling stories.
+              </p>
+
+              <a href="#register" class="btn-hero-enroll">Enroll Now</a>
+              <p class="hero-price">₦150,000 / 3-Month Program</p>
+            </div>
+
+            <div class="hero-image">
+              <img src="images/data-analysis.jpeg" alt="Person looking at charts and graphs on a computer screen">
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- Why Choose Us Section -->
+      <section class="why-choose-us">
+        <div class="container">
+          <h2>Why Our Program?</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Business Intelligence Focus</h3>
+              <p>
+                Don't just analyze numbers. Learn to interpret data to drive strategic business decisions and growth.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Industry-Standard Tools</h3>
+              <p>
+                Get hands-on experience with the exact tech stack employers want: Excel, SQL, Python, and Power BI.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-folder-open"></i>
+              </div>
+              <h3>Real-World Capstones</h3>
+              <p>
+                Build a portfolio by working on actual datasets from finance, healthcare, and retail sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   <!-- Course Modules Section -->
+      <section class="course-modules">
+        <div class="container">
+<h2>What You Will Learn</h2>
+<div class="modules-grid">
+    <div class="module-card">
+        <i class="fas fa-database"></i> 
+        <h3>Data Collection & Cleaning</h3>
+        <p>Learn to gather data from various sources and prepare it for analysis using Python (Pandas).</p>
+    </div>
+    <div class="module-card">
+        <i class="fas fa-search-plus"></i>
+        <h3>Exploratory Data Analysis (EDA)</h3>
+        <p>Uncover patterns, spot anomalies, and test hypotheses in your datasets.</p>
+    </div>
+    <div class="module-card">
+        <i class="fas fa-cogs"></i> 
+        <h3>SQL for Data Analysis</h3>
+        <p>Master the language of databases to query and manipulate large datasets efficiently.</p>
+    </div>
+    <div class="module-card">
+        <i class="fas fa-chart-pie"></i> 
+        <h3>Data Visualization</h3>
+        <p>Create compelling charts, graphs, and interactive dashboards with tools like Tableau or Power BI.</p>
+    </div>
+    <div class="module-card">
+        <i class="fas fa-brain"></i> 
+        <h3>Statistical Analysis</h3>
+        <p>Understand key statistical concepts to draw meaningful and accurate conclusions from data.</p>
+    </div>
+    <div class="module-card">
+        <i class="fas fa-chart-line"></i> 
+        <h3>Storytelling with Data</h3>
+        <p>Learn how to present your findings in a clear and persuasive way to stakeholders.</p>
+    </div>
+</div>
+</div>
+       </div>
+      </section>
+
+    
+    <!-- === SKILLS SECTION  === -->
+      <section class="skills-gain-section">
+        <div class="container">
+          <h2>Skills You Will Gain</h2>
+          <ul class="skills-list-grid">
+            <li><i class="fas fa-check"></i> Python Programming (Pandas & NumPy)</li>
+            <li><i class="fas fa-check"></i> Advanced Excel & Pivot Tables</li>
+            <li><i class="fas fa-check"></i> SQL for Data Extraction</li>
+            <li><i class="fas fa-check"></i> Data Cleaning & Preprocessing</li>
+            <li><i class="fas fa-check"></i> Data Visualization (Tableau/Power BI)</li>
+            <li><i class="fas fa-check"></i> Statistical Analysis</li>
+            <li><i class="fas fa-check"></i> Exploratory Data Analysis (EDA)</li>
+            <li><i class="fas fa-check"></i> Business Intelligence Reporting</li>
+            <li><i class="fas fa-check"></i> Dashboard Creation</li>
+            <li><i class="fas fa-check"></i> Data Storytelling & Presentation</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- === COURSES SECTION === -->
+      <section class="included-courses-section">
+        <div class="container">
+          <h2>Included Courses</h2>
+          <div class="courses-grid-cards">
+            <!-- Card 1 -->
+            <div class="course-card">
+              <span class="course-number">01</span>
+              <h3>Data Fundamentals: Excel & SQL Mastery</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="course-card">
+              <span class="course-number">02</span>
+              <h3>Python for Data Analysis (Pandas & NumPy)</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="course-card">
+              <span class="course-number">03</span>
+              <h3>Data Visualization with Tableau & Power BI</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="course-card">
+              <span class="course-number">04</span>
+              <h3>Capstone Project: Solving Real Business Problems</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- === TESTIMONIALS SECTION === -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>What Our Students Say</h2>
+          <div class="testimonial-grid">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "I was working in customer service and wanted a career change. This course taught me SQL and Python from scratch. I'm now a Junior Data Analyst."
+              </blockquote>
+              <cite>- Sarah Jenkins, Junior Data Analyst</cite>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                "The module on Data Storytelling was incredible. I finally learned how to present my findings to my boss in a way that makes sense."
+              </blockquote>
+              <cite>- Emeka Obi, Marketing Manager</cite>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <blockquote>
+                "I used to struggle with massive spreadsheets. Learning Power BI automation through this course saved me hours of work every week."
+              </blockquote>
+              <cite>- Tunde A., Financial Analyst</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Section -->
+      <section id="register" class="course-registration-form">
+        <div class="container">
+          <h2>Register Your Interest</h2>
+          <p class="section-intro">
+            Complete the form below, and our admissions team will contact you
+            with the next steps.
+          </p>
+
+          <form
+            class="registration-form"
+            action="YOUR_FORM_HANDLER_URL"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="full-name"
+                >First Name <span class="required">*</span></label
+              >
+              <input type="text" id="full-name" name="fullName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="other-name">Other Name (optional)</label>
+              <input type="text" id="other-name" name="othername" />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name"
+                >Last Name <span class="required">*</span></label
+              >
+              <input type="text" id="last-name" name="lastname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email"
+                >Email Address <span class="required">*</span></label
+              >
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone"
+                >Phone Number <span class="required">*</span></label
+              >
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="course"
+                value="Data Analysis Workshop"
+              />
+              <button type="submit" class="btn-enroll">
+                Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chatbot Widget -->
+    <!-- Rtech Chatbot -->
+    <!-- Rtech Chatbot -->
+    <div class="rtech-chatbot">
+      <div class="chatbot-toggle" id="chatbotToggle">
+        <img src="logo/chatbot.png" alt="Rtech Bot" />
+      </div>
+
+      <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+          <div class="bot-info">
+            <img src="images/rtech-bot.png" alt="Rtech Bot" />
+            <span>Rtech</span>
+          </div>
+          <button id="closeChatbot">&times;</button>
+        </div>
+
+        <div class="chatbot-content" id="chatbotMessages">
+          <div class="bot-msg">
+            ðŸ‘‹ Hello! Iâ€™m Rtech. How can I help you today?
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="userInput" placeholder="Type a message..." />
+          <button id="sendBtn">âž¤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         NEWSLETTER / FOOTER
+    ========================== -->
+    <section class="qei-newsletter" aria-labelledby="qei-newsletter-title">
+      <div class="qei-newsletter-bg"></div>
+
+      <div class="qei-newsletter-wrap">
+        <h2 id="qei-newsletter-title" class="qei-newsletter-heading">
+          Subscribe to get our Newsletter
+        </h2>
+
+        <form class="qei-newsletter-form" action="#" method="post" novalidate>
+          <label for="qei-newsletter-email" class="sr-only">Your Email</label>
+          <input
+            id="qei-newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <nav class="qei-newsletter-links" aria-label="Footer">
+          <a href="#">Careers</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Privacy Policy</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+
+        <p class="qei-newsletter-copy">© 2025 Rtech Technology</p>
+      </div>
+    </section>
+
+    <!-- =========== CHAT BOT =========== -->
+    <script>
+      const toggleBtn = document.getElementById("chatbotToggle");
+      const chatBox = document.getElementById("chatbotBox");
+      const closeBtn = document.getElementById("closeChatbot");
+      const sendBtn = document.getElementById("sendBtn");
+      const userInput = document.getElementById("userInput");
+      const chatMessages = document.getElementById("chatbotMessages");
+
+      // Toggle open/close
+      toggleBtn.addEventListener("click", () => {
+        chatBox.style.display =
+          chatBox.style.display === "block" ? "none" : "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        chatBox.style.display = "none";
+      });
+
+      // Send message + fake bot reply
+      sendBtn.addEventListener("click", sendMessage);
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+
+      function sendMessage() {
+        const userMsg = userInput.value.trim();
+        if (!userMsg) return;
+
+        // Show user message
+        const userDiv = document.createElement("div");
+        userDiv.classList.add("user-msg");
+        userDiv.textContent = userMsg;
+        chatMessages.appendChild(userDiv);
+
+        userInput.value = "";
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simple predefined responses
+        setTimeout(() => {
+          const botDiv = document.createElement("div");
+          botDiv.classList.add("bot-msg");
+
+          if (userMsg.toLowerCase().includes("service"))
+            botDiv.textContent =
+              "We offer IT training, web development, and research services.";
+          else if (userMsg.toLowerCase().includes("training"))
+            botDiv.textContent =
+              "You can register for our tech training via the â€˜Trainingâ€™ page.";
+          else if (userMsg.toLowerCase().includes("support"))
+            botDiv.textContent =
+              "You can contact our support team via email or live chat.";
+          else
+            botDiv.textContent =
+              "Thanks for reaching out! Iâ€™ll forward your message to our team.";
+
+          chatMessages.appendChild(botDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 700);
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

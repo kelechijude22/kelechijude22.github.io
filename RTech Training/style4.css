@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.cyber-hero {
+    background-color: #13277E;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-image img {
+    width: 80%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.hero-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffb51e;
+    margin-top: 20px;
+}
+
+.btn-hero-enroll {
+    background-color: #ffb51e;
+    color: #13277E;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.btn-hero-enroll:hover {
+    background-color: #e6a31b;
+    transform: translateY(-3px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-icon {
+    background-color: #13277E;
+    color: #ffb51e;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #13277e;
+}
+
+
+/* Course Modules Section */
+.cyber-modules {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cyber-modules h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.modules-grid-cyber {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.module-card-cyber {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ffb51e;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card-cyber:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 181, 30, 0.2);
+}
+
+.module-card-cyber i {
+    font-size: 2.5rem;
+    color: #ffb51e;
+    margin-bottom: 20px;
+}
+
+.module-card-cyber h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #13277E;
+}
+
+.module-card-cyber p {
+    color: #333;
+}
+
+
+/* === SKILLS SECTION=== */
+.skills-gain-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.skills-gain-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.skills-list-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-list-grid li {
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+
+.skills-list-grid i {
+    background-color: #13277E;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+
+/* Courses Section */
+.included-courses-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.included-courses-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.courses-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #13277E;
+    text-align: center;
+}
+
+.course-card .course-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffb51e;
+    margin-bottom: 10px;
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    color: #13277E;
+    font-weight: 600;
+}
+
+
+/* ===  Testimonials Section  === */
+.testimonials-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #13277E;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #ffb51e;
+    display: flex;
+    flex-direction: column;
+}
+
+.star-rating {
+    color: #ffb51e;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    flex-grow: 1;
+    color: #333;
+}
+
+.testimonial-card cite {
+    font-weight: 600;
+    font-style: normal;
+    margin-top: auto;
+    color: #13277E;
+}
+
+
+/* Registration Section */
+.course-registration-form {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #13277E;
+    text-align: center;
+}
+
+.course-registration-form .section-intro {
+    margin-top: 10px;
+    color: #333;
+}
+
+.course-registration-form h2 {
+    font-size: 2.5rem;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.registration-form .btn-enroll {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #13277E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form .btn-enroll:hover {
+    background-color: #0f1e5c;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .skills-list-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 992px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-list-grid {
+        grid-template-columns: 1fr;
+    }
+}

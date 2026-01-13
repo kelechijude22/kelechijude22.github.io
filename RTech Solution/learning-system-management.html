@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Management Solutions - R-Tech</title>
+
+    <link rel="icon" type="logo" href="logo/favicon.webp" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style10.css?v=1.0" />
+
+    <style>
+      /* Adjust Register section padding */
+      .course-registration-form {
+        padding: 20px 20px 40px;
+        margin-top: 0;
+      }
+
+      .service-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("Lms-solution.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ========================HEADER========================== -->
+    <header class="navbar" role="banner">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="R-Tech Home">
+            <img src="logo/mainlogo.png" alt="R-Tech Logo" />
+          </a>
+        </div>
+
+        <nav id="primary-navigation" aria-label="Primary">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#">Tech Solutions ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Development Services</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Research ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Academy Research</a></li>
+                <li><a href="research.html">Business Intelligence</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">EdTech ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">High School</a></li>
+                <li><a href="#">University</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#" class="btn-signup">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="service-hero">
+        <div class="container">
+          <h1>Empower Learning Through Technology</h1>
+          <p class="course-subtitle">
+            Build and deploy custom learning platforms for schools,
+            universities, training centers, and organizations.
+          </p>
+          <div class="hero-btns">
+            <a href="#quote" class="btn-hero-enroll">Build Your LMS</a>
+            <a href="#work" class="btn-hero-secondary">View Features</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT WE OFFER (Services) -->
+      <section class="what-we-offer">
+        <div class="container">
+          <h2 class="section-title">EdTech Solutions</h2>
+          <p class="section-intro-text">
+            Transforming traditional education into immersive digital
+            experiences.
+          </p>
+          <div class="service-detail-grid">
+            <div class="service-box">
+              <div class="icon-circle">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Custom LMS Development</h3>
+              <p>
+                Tailored learning management systems based on Moodle or custom
+                frameworks to manage courses, students, and certifications.
+              </p>
+            </div>
+            <div class="service-box">
+              <div class="icon-circle">
+                <i class="fas fa-video"></i>
+              </div>
+              <h3>Virtual Classrooms</h3>
+              <p>
+                Integration of live video conferencing (Zoom/Teams API),
+                whiteboards, and screen sharing for real-time remote teaching.
+              </p>
+            </div>
+            <div class="service-box">
+              <div class="icon-circle"><i class="fas fa-school"></i></div>
+              <h3>School Management</h3>
+              <p>
+                Comprehensive portals (SIS) for attendance tracking, grading
+                systems, fee management, and parent-teacher communication.
+              </p>
+            </div>
+            <div class="service-box">
+              <div class="icon-circle">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Corporate Training</h3>
+              <p>
+                Employee onboarding and upskilling platforms with progress
+                tracking, gamification, and automated compliance reporting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK (EdTech Tools) -->
+      <section class="tech-stack">
+        <div class="container">
+          <h2>Platforms & Technologies</h2>
+          <div class="tech-stack-grid">
+            <div class="tech-item">
+              <i class="fas fa-m tech-icon"></i
+              ><span class="tech-name">Moodle</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-chalkboard tech-icon"></i
+              ><span class="tech-name">Blackboard</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-php tech-icon"></i
+              ><span class="tech-name">PHP / Laravel</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-react tech-icon"></i
+              ><span class="tech-name">React JS</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-video tech-icon"></i
+              ><span class="tech-name">Zoom API</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-cloud tech-icon"></i
+              ><span class="tech-name">AWS Cloud</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS SECTION -->
+      <section class="process-section">
+        <div class="container">
+          <h2 class="section-title">Development Lifecycle</h2>
+          <div class="process-steps">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <h3>Consult</h3>
+              <p>Curriculum Analysis</p>
+            </div>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <h3>Develop</h3>
+              <p>Platform Setup & UI</p>
+            </div>
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <h3>Migrate</h3>
+              <p>Student Data Import</p>
+            </div>
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <h3>Train</h3>
+              <p>Admin & Staff Training</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS SECTION -->
+      <section class="stats-section">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Unlimited</h3>
+            <p>Student Capacity</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-globe"></i>
+            <h3>Anywhere</h3>
+            <p>Remote Access</p>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Real-Time</h3>
+            <p>Grade Analytics</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REQUEST QUOTE FORM -->
+      <section id="quote" class="course-registration-form">
+        <div class="container">
+          <h2>Request LMS Consultation</h2>
+          <p class="section-intro">
+            Ready to digitize your institution? Tell us about your needs.
+          </p>
+
+          <form class="registration-form" action="php-link" method="POST">
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Name <span class="required">*</span></label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form-group half">
+                <label
+                  >Institution/Company Email
+                  <span class="required">*</span></label
+                >
+                <input type="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Required</label>
+              <select name="service">
+                <option value="School LMS">
+                  School Management System (K-12)
+                </option>
+                <option value="University Portal">
+                  University/College Portal
+                </option>
+                <option value="Corporate Training">
+                  Corporate Training Platform
+                </option>
+                <option value="Moodle Customization">
+                  Moodle Setup & Customization
+                </option>
+                <option value="Online Course Platform">
+                  Online Course Sales Platform
+                </option>
+                <option value="Consultation">EdTech Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Details</label>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Describe your institution size, number of students, and specific features needed..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-enroll">Request Proposal</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Chatbot Widget -->
+    <!-- Rtech Chatbot -->
+    <div class="rtech-chatbot">
+      <div class="chatbot-toggle" id="chatbotToggle">
+        <img src="logo/chatbot.png" alt="Rtech Bot" />
+      </div>
+
+      <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+          <div class="bot-info">
+            <img src="images/rtech-bot.png" alt="Rtech Bot" />
+            <span>Rtech EdTech</span>
+          </div>
+          <button id="closeChatbot">&times;</button>
+        </div>
+
+        <div class="chatbot-content" id="chatbotMessages">
+          <div class="bot-msg">
+            👋 Hello! Interested in building a learning platform? How can I
+            help?
+          </div>
+        </div>
+
+        <div class="chatbot-input">
+          <input type="text" id="userInput" placeholder="Type a message..." />
+          <button id="sendBtn">➤</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+         NEWSLETTER / FOOTER
+    ========================== -->
+    <section class="qei-newsletter" aria-labelledby="qei-newsletter-title">
+      <div class="qei-newsletter-bg"></div>
+
+      <div class="qei-newsletter-wrap">
+        <h2 id="qei-newsletter-title" class="qei-newsletter-heading">
+          Subscribe for EdTech Trends
+        </h2>
+
+        <form class="qei-newsletter-form" action="#" method="post" novalidate>
+          <label for="qei-newsletter-email" class="sr-only">Your Email</label>
+          <input
+            id="qei-newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <nav class="qei-newsletter-links" aria-label="Footer">
+          <a href="#">Careers</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Privacy Policy</a>
+          <span class="qei-newsletter-sep">|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+
+        <p class="qei-newsletter-copy">© 2025 Rtech Technology</p>
+      </div>
+    </section>
+
+    <!-- =========== CHAT BOT JS =========== -->
+    <script>
+      const toggleBtn = document.getElementById("chatbotToggle");
+      const chatBox = document.getElementById("chatbotBox");
+      const closeBtn = document.getElementById("closeChatbot");
+      const sendBtn = document.getElementById("sendBtn");
+      const userInput = document.getElementById("userInput");
+      const chatMessages = document.getElementById("chatbotMessages");
+
+      // Toggle open/close
+      toggleBtn.addEventListener("click", () => {
+        chatBox.style.display =
+          chatBox.style.display === "block" ? "none" : "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        chatBox.style.display = "none";
+      });
+
+      // Send message + fake bot reply
+      sendBtn.addEventListener("click", sendMessage);
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+
+      function sendMessage() {
+        const userMsg = userInput.value.trim();
+        if (!userMsg) return;
+
+        // Show user message
+        const userDiv = document.createElement("div");
+        userDiv.classList.add("user-msg");
+        userDiv.textContent = userMsg;
+        chatMessages.appendChild(userDiv);
+
+        userInput.value = "";
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simple predefined responses
+        setTimeout(() => {
+          const botDiv = document.createElement("div");
+          botDiv.classList.add("bot-msg");
+
+          // Updated Keywords for LMS / Education
+          if (
+            userMsg.toLowerCase().includes("school") ||
+            userMsg.toLowerCase().includes("university")
+          )
+            botDiv.textContent =
+              "We build portals for schools that handle grading, attendance, and online classes.";
+          else if (
+            userMsg.toLowerCase().includes("moodle") ||
+            userMsg.toLowerCase().includes("lms")
+          )
+            botDiv.textContent =
+              "We specialize in Moodle setup, customization, and plugin development.";
+          else if (
+            userMsg.toLowerCase().includes("price") ||
+            userMsg.toLowerCase().includes("quote")
+          )
+            botDiv.textContent =
+              "Costs vary by number of students and features. Please request a quote below!";
+          else
+            botDiv.textContent =
+              "Thanks! An EdTech specialist will review your requirements.";
+
+          chatMessages.appendChild(botDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 700);
+      }
+    </script>
+  </body>
+</html>
