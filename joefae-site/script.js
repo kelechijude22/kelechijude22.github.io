@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const customerEmailInput = document.getElementById("customer-email");
 
   // --- Contact Details ---
-  const businessWhatsAppNumber = "23409168734419";
+  const businessWhatsAppNumber = "2348037196720";
   const businessEmail = "joefaestores@gmail.com"; 
 
   // Helper function to open the modal
