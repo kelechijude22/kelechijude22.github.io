@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = encodeURIComponent(
       `Hi Jofae, I'm interested in the ${itemName}. My name is ${customerName}.`
     );
-    const whatsappURL = `https://wa.me/${23409168734419}?text=${message}`;
+    const whatsappURL = `https://wa.me/${2348037196720}?text=${message}`;
     window.open(whatsappURL, "_blank");
     closeModal();
   });
