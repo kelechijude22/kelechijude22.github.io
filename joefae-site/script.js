@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const customerEmailInput = document.getElementById("customer-email");
 
   // --- Contact Details ---
-  const businessWhatsAppNumber = "2348037196720";
-  const businessEmail = "joefaestores@gmail.com"; 
+  const businessWhatsAppNumber = "2349110806895";
+  const businessEmail = "chigoziejose@gmail.com"; 
 
   // Helper function to open the modal
   const openModal = (itemName) => {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = encodeURIComponent(
       `Hi Jofae, I'm interested in the ${itemName}. My name is ${customerName}.`
     );
-    const whatsappURL = `https://wa.me/${2348037196720}?text=${message}`;
+    const whatsappURL = `https://wa.me/${2349110806895}?text=${message}`;
     window.open(whatsappURL, "_blank");
     closeModal();
   });
